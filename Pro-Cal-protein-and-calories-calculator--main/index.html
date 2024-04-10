@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BB Body Balance</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    @media only screen and (max-width: 600px) {
+        /* Adjust styles for screens up to 600px wide */
+        .centered-container {
+            font-size: 16px;
+        }
+        .center-image {
+            height: 70%;
+        }
+    }
+
+    @media only screen and (max-width: 400px) {
+        /* Adjust styles for screens up to 400px wide */
+        .centered-container {
+            font-size: 14px;
+        }
+        .center-image {
+            height: 50%;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Посчитайте количеств калорий и белков</h1>
+        <h2>Введите название продукта</h2>
+        <h3 for="food">Продукт питания:</h3><input type="text" id="food" placeholder="Например: Рис"></input><button onclick="val()">Поиск</button>
+        <h2 id="output"></h2>
+        <img src="muscle.png">
+        
+        <script src="java.js"></script>
+    </div>
+</body>
+</html>
